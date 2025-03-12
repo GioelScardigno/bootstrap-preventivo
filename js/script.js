@@ -97,7 +97,7 @@ function jobType(optionValue) {
 
 // decimals extraction function
 function getDecimals(number) {
-    let numberStr = number.toString()
+    let numberStr = number.toFixed(2).toString()
     let dot = numberStr.indexOf(".")
     let decimals = numberStr.substring(dot + 1, dot + 3)
     return decimals
